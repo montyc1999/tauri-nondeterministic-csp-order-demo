@@ -13,7 +13,17 @@
       }
     ],
     "security": {
-      "csp": null
+      "csp": {
+        "img-src": "'self'",
+        "font-src": "'self'",
+        "media-src": "'self'",
+        "script-src": "'self'",
+        "default-src": [
+          "'self'",
+          "ipc:",
+          "http://ipc.localhost"
+        ]
+      }
     }
   }
 }
